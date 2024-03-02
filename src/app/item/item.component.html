@@ -1,1 +1,17 @@
-<p>item works!</p>
+<h1>Loot List</h1>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" *ngFor="let item of items">
+        <img
+        class="card-img-top"
+        [src]="item.imageUrl"
+        alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">{{item.name}}</h2>
+          <p class="card-text">{{item.price}}</p>
+          <p class="card-text">{{item.description}}</p>
+    </div>
+  </div>
+</div>

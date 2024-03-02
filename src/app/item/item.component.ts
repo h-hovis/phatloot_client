@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from '../services/item.service';
 import { Item } from '../models/item';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-item',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, CommonModule],
   templateUrl: './item.component.html',
   styleUrl: './item.component.scss'
 })
