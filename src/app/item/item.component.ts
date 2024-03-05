@@ -15,10 +15,10 @@ export class ItemComponent implements OnInit{
   items: Item[] = [];
   newItem: string = '';
 
-  constructor(private itemService: ItemService) { }
+  constructor(private itemService: ItemService) {}
 
   ngOnInit(): void {
-      this.itemService.getItems().subscribe(items => this.items = items);
+      this.itemService.getItems().subscribe(item => this.items = item);
   }
 
   addItem() {
