@@ -1,0 +1,70 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label
+    for="first-name"
+    class="form-label">
+    First Name</label>
+    <input
+    type="text"
+    class="form-control"
+    id="first-name"
+    formControlName="firstName">
+    <!-- <div
+    *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+    class="alert alert-danger">
+      <div *ngIf="firstName.errors.required">
+        First Name is required.
+      </div>
+    </div> -->
+  </div>
+  <div class="mb-3">
+    <label
+    for="last-name"
+    class="form-label">
+    Last Name</label>
+    <input
+    type="text"
+    class="form-control"
+    id="last-name"
+    formControlName="lastName">>
+  </div>
+  <div class="mb-3">
+    <label
+    for="email"
+    class="form-label">
+    Email address</label>
+    <input
+    type="email"
+    class="form-control"
+    id="email"
+    formControlName="email">>
+  </div>
+  <div class="mb-3">
+    <label
+    for="username"
+    class="form-label">
+    Username</label>
+    <input
+    type="text"
+    class="form-control"
+    id="username"
+    formControlName="username">>
+  </div>
+  <div class="mb-3">
+    <label
+    for="password"
+    class="form-label">
+    Password</label>
+    <input
+    type="password"
+    class="form-control"
+    required minlength="6"
+    id="password"
+    formControlName="password">
+  </div>
+  <button
+  type="submit"
+  class="btn btn-primary"
+  [disabled]="!userForm.valid">
+  Submit</button>
+</form>
