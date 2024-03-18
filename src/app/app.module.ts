@@ -7,10 +7,10 @@ import { ItemComponent } from "./item/item.component";
 
 @NgModule({
     declarations: [
-        AppComponent
+        // AppComponent
     ],
     providers: [],
-    bootstrap: [AppComponent],
+    bootstrap: [],
     imports: [
         BrowserModule,
         AppRoutingModule,
