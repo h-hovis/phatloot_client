@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ItemComponent } from './item/item.component';
+import { ProductComponent } from './product/product.component';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 
@@ -8,7 +8,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [ItemComponent, RouterOutlet, NavbarComponent]
+    imports: [ProductComponent, RouterOutlet, NavbarComponent]
 })
 export class AppComponent {
   title = 'phatloot_client';
